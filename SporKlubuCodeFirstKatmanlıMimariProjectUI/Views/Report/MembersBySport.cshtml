@@ -1,0 +1,48 @@
+﻿@model List<SporKulubu.Model.Member>
+
+<div class="main-panel">
+    <div class="content-wrapper">
+
+        <div class="card">
+            <div class="card-body">
+
+                <h3 class="card-title">Branşlara Göre Üye Listesi</h3>
+
+                <div class="table-responsive">
+
+                    <table class="table table-bordered table-hover">
+
+                        <thead>
+                            <tr>
+                                <th>Branş</th>
+                                <th>Üye Adı</th>
+                                <th>Yaş</th>
+                                <th>Telefon</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Sport.SportName</td>
+                                    <td>@item.FullName</td>
+                                    <td>@item.Age</td>
+                                    <td>@item.Phone</td>
+                                    <td>@item.Email</td>
+                                </tr>
+                            }
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

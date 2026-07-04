@@ -1,0 +1,161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB450490-1C6B-DBE2-6358-8520B19DB34E}|SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.csproj|c:\\users\\eylul\\documents\\github\\allsoftitoprojects\\3cfarchitectureproject\\sporklubucodefirstkatmanl\u0131\\sporklubucodefirstkatmanl\u0131mimariprojectui\\views\\report\\membersbysport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB450490-1C6B-DBE2-6358-8520B19DB34E}|SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.csproj|solutionrelative:sporklubucodefirstkatmanl\u0131mimariprojectui\\views\\report\\membersbysport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB450490-1C6B-DBE2-6358-8520B19DB34E}|SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.csproj|c:\\users\\eylul\\documents\\github\\allsoftitoprojects\\3cfarchitectureproject\\sporklubucodefirstkatmanl\u0131\\sporklubucodefirstkatmanl\u0131mimariprojectui\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB450490-1C6B-DBE2-6358-8520B19DB34E}|SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.csproj|solutionrelative:sporklubucodefirstkatmanl\u0131mimariprojectui\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5695A2AB-58CA-4D79-92C7-A7282B9D0FCC}|SporKulubu.Model\\SporKulubu.Model.csproj|c:\\users\\eylul\\documents\\github\\allsoftitoprojects\\3cfarchitectureproject\\sporklubucodefirstkatmanl\u0131\\sporkulubu.model\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5695A2AB-58CA-4D79-92C7-A7282B9D0FCC}|SporKulubu.Model\\SporKulubu.Model.csproj|solutionrelative:sporkulubu.model\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88179E5F-24D3-CADD-6A9D-076AC6E87E67}|SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.Data\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.Data.csproj|c:\\users\\eylul\\documents\\github\\allsoftitoprojects\\3cfarchitectureproject\\sporklubucodefirstkatmanl\u0131\\sporklubucodefirstkatmanl\u0131mimariprojectui.data\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88179E5F-24D3-CADD-6A9D-076AC6E87E67}|SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.Data\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.Data.csproj|solutionrelative:sporklubucodefirstkatmanl\u0131mimariprojectui.data\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB450490-1C6B-DBE2-6358-8520B19DB34E}|SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.csproj|c:\\users\\eylul\\documents\\github\\allsoftitoprojects\\3cfarchitectureproject\\sporklubucodefirstkatmanl\u0131\\sporklubucodefirstkatmanl\u0131mimariprojectui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB450490-1C6B-DBE2-6358-8520B19DB34E}|SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.csproj|solutionrelative:sporklubucodefirstkatmanl\u0131mimariprojectui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB450490-1C6B-DBE2-6358-8520B19DB34E}|SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.csproj|c:\\users\\eylul\\documents\\github\\allsoftitoprojects\\3cfarchitectureproject\\sporklubucodefirstkatmanl\u0131\\sporklubucodefirstkatmanl\u0131mimariprojectui\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB450490-1C6B-DBE2-6358-8520B19DB34E}|SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.csproj|solutionrelative:sporklubucodefirstkatmanl\u0131mimariprojectui\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB450490-1C6B-DBE2-6358-8520B19DB34E}|SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.csproj|c:\\users\\eylul\\documents\\github\\allsoftitoprojects\\3cfarchitectureproject\\sporklubucodefirstkatmanl\u0131\\sporklubucodefirstkatmanl\u0131mimariprojectui\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB450490-1C6B-DBE2-6358-8520B19DB34E}|SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.csproj|solutionrelative:sporklubucodefirstkatmanl\u0131mimariprojectui\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB450490-1C6B-DBE2-6358-8520B19DB34E}|SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.csproj|c:\\users\\eylul\\documents\\github\\allsoftitoprojects\\3cfarchitectureproject\\sporklubucodefirstkatmanl\u0131\\sporklubucodefirstkatmanl\u0131mimariprojectui\\views\\sport\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB450490-1C6B-DBE2-6358-8520B19DB34E}|SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.csproj|solutionrelative:sporklubucodefirstkatmanl\u0131mimariprojectui\\views\\sport\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 225,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MembersBySport.cshtml",
+              "DocumentMoniker": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Report\\MembersBySport.cshtml",
+              "RelativeDocumentMoniker": "SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Report\\MembersBySport.cshtml",
+              "ToolTip": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Report\\MembersBySport.cshtml",
+              "RelativeToolTip": "SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Report\\MembersBySport.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwB0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-16T12:43:30.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKulubu.Model\\Member.cs",
+              "RelativeDocumentMoniker": "SporKulubu.Model\\Member.cs",
+              "ToolTip": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKulubu.Model\\Member.cs",
+              "RelativeToolTip": "SporKulubu.Model\\Member.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T12:38:40.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.Data\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.Data\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.Data\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "SporKlubuCodeFirstKatmanl\u0131MimariProjectUI.Data\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T12:37:09.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Controllers\\ReportController.cs",
+              "RelativeDocumentMoniker": "SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Controllers\\ReportController.cs",
+              "ToolTip": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Controllers\\ReportController.cs",
+              "RelativeToolTip": "SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Controllers\\ReportController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T12:33:10.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T12:15:21.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Sport\\Index.cshtml",
+              "RelativeDocumentMoniker": "SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Sport\\Index.cshtml",
+              "ToolTip": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Sport\\Index.cshtml",
+              "RelativeToolTip": "SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Sport\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAACIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-16T11:01:42.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAwwB8AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-16T10:52:14.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanl\u0131\\SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "SporKlubuCodeFirstKatmanl\u0131MimariProjectUI\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAD0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-16T10:19:57.68Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

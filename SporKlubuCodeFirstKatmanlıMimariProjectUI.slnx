@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SporKlubuCodeFirstKatmanlıMimariProjectUI.Data/SporKlubuCodeFirstKatmanlıMimariProjectUI.Data.csproj" />
+  <Project Path="SporKlubuCodeFirstKatmanlıMimariProjectUI/SporKlubuCodeFirstKatmanlıMimariProjectUI.csproj" />
+  <Project Path="SporKulubu.Model/SporKulubu.Model.csproj" Id="5695a2ab-58ca-4d79-92c7-a7282b9d0fcc" />
+</Solution>

@@ -1,0 +1,68 @@
+﻿@model IEnumerable<SporKulubu.Model.Sport >
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">Spor Dalı Listesi</h4>
+                        <p class="card-description">
+                        </p>
+                        <div class="d-flex justify-content-end mb-3 mr-2">
+                            <a asp-action="Create" class="btn btn-primary">
+                                <i class="fas fa-plus"></i> Ekle
+                            </a>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+
+                                        <th>Id</th>
+                                        <th>Spor Dalı</th>
+
+                                        <th>Düzenle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.Id</td>
+                                            <td>@item.SportName</td>
+                                            <td>
+                                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success">Edit</a>
+                                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Sil</a>
+
+                                            </td>
+                                        </tr>
+                                    }
+
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    
+        </div>
+    </div>
+    <!-- content-wrapper ends -->
+    <!-- partial:../../partials/_footer.html -->
+    <footer class="footer">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                    <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+                    <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from Bootstrapdash.com</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- partial -->
+</div>

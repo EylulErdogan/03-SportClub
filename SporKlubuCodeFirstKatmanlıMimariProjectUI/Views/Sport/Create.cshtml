@@ -1,0 +1,35 @@
+﻿@model SporKulubu.Model.Sport
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+
+                        <h4 class="card-title">Üye Ekle</h4>
+
+                        <form asp-action="Create" method="post">
+
+                            <div class="form-group">
+                                <label asp-for="SportName"></label>
+                                <input asp-for="SportName" class="form-control" placeholder="Ad Soyad" />
+                                <span asp-validation-for="SportName" class="text-danger"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary me-2">
+                                Kaydet
+                            </button>
+
+                            <a asp-action="Index" class="btn btn-light">
+                                İptal
+                            </a>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

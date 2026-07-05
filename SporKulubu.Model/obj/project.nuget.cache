@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3macrK1XwTc=",
+  "dgSpecHash": "mVTs+rUZMLk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanlı\\SporKulubu.Model\\SporKulubu.Model.csproj",
+  "projectFilePath": "C:\\Users\\eylul\\Documents\\GitHub\\03-SportClub\\SporKulubu.Model\\SporKulubu.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eylul\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\eylul\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

@@ -2,80 +2,68 @@
 using Microsoft.EntityFrameworkCore;
 using SporKlubuCodeFirstKatmanliMimariProjectUI.Data.Data;
 using SporKulubu.Model.viewModel;
-namespace SporKlubuCodeFirstKatmanlıMimariProjectUI.Controllers
+
+namespace SporKulubuCodeFirstKatmanliMimariProjectUI.Controllers
 {
     public class AdminController : Controller
     {
-        private readonly ApplicationDbContext dbcontext;
-        public AdminController(ApplicationDbContext dbcontext)
+        private readonly ApplicationDbContext _context;
+
+        public AdminController(ApplicationDbContext context)
         {
-            this.dbcontext = dbcontext;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            var today = DateTime.Today;
-
             var model = new AdminDashboardViewModel();
 
-            model.MemberPayments = dbcontext.Members
-                .Include(x => x.Sport)
-                .Select(x => new MemberCoachPaymentViewModel
-                {
-                    MemberName = x.FullName,
-                    Age = x.Age,
-                    SportName = x.Sport.SportName,
+            model.MemberCount = _context.Members.Count();
+            model.CoachCount = _context.Coaches.Count();
+            model.SportCount = _context.Sports.Count();
 
-                    CoachName = dbcontext.Coaches
-                        .Where(c => c.SportId == x.SportId)
-                        .Select(c => c.FullName)
-                        .FirstOrDefault(),
+            model.TotalPaymentAmount = _context.Payments.Sum(x => x.Amount);
 
-                    Amount = dbcontext.Payments
-                        .Where(p => p.MemberId == x.Id)
-                        .Select(p => p.Amount)
-                        .FirstOrDefault(),
+            model.PaidAmount = _context.Payments
+                .Where(x => x.IsPaid)
+                .Sum(x => x.Amount);
 
-                    PaymentDate = dbcontext.Payments
-                        .Where(p => p.MemberId == x.Id)
-                        .Select(p => p.PaymentDate)
-                        .FirstOrDefault(),
+            model.UnpaidAmount = _context.Payments
+                .Where(x => !x.IsPaid)
+                .Sum(x => x.Amount);
 
-                    PaymentType = dbcontext.Payments
-                        .Where(p => p.MemberId == x.Id)
-                        .Select(p => p.PaymentType)
-                        .FirstOrDefault(),
-
-                    IsPaid = dbcontext.Payments
-                        .Where(p => p.MemberId == x.Id)
-                        .Select(p => p.IsPaid)
-                        .FirstOrDefault()
-                })
-                .ToList();
-
-            model.SportCounts = dbcontext.Members
-                .Include(x => x.Sport)
-                .GroupBy(x => x.Sport.SportName)
-                .Select(g => new SportMemberCountViewModel
-                {
-                    SportName = g.Key,
-                    MemberCount = g.Count()
-                })
-                .ToList();
-
-            model.PaymentStatuses = dbcontext.Payments
+            model.MemberPayments = _context.Payments
                 .Include(x => x.Member)
+                .OrderByDescending(x => x.PaymentDate)
                 .Select(x => new PaymentStatusViewModel
                 {
                     MemberName = x.Member.FullName,
                     Amount = x.Amount,
                     PaymentDate = x.PaymentDate,
-                    PaymentStatus =
-                        x.IsPaid ? "Ödendi" :
-                        x.PaymentDate < today ? "Geçti" :
-                        x.PaymentDate <= today.AddDays(7) ? "Yaklaşıyor" :
-                        "Bekleniyor"
+                    IsPaid = x.IsPaid
                 })
+                .Take(5)
+                .ToList();
+
+            model.SportCounts = _context.Members
+                .Include(x => x.Sport)
+                .GroupBy(x => x.Sport.SportName)
+                .Select(x => new SportMemberCountViewModel
+                {
+                    SportName = x.Key,
+                    MemberCount = x.Count()
+                })
+                .ToList();
+
+            model.CoachReports = _context.Coaches
+                .Include(x => x.Sport)
+                .Select(x => new MemberCoachPaymentViewModel
+                {
+                    CoachName = x.FullName,
+                    SportName = x.Sport.SportName,
+                    Salary = x.Salary
+                })
+                .Take(5)
                 .ToList();
 
             return View(model);

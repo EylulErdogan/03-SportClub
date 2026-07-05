@@ -1,113 +1,315 @@
 ﻿@model SporKulubu.Model.viewModel.AdminDashboardViewModel
+
 <div class="main-panel">
     <div class="content-wrapper">
+
+        <!-- İSTATİSTİK KARTLARI -->
+
         <div class="row">
-            <div class="col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Basic Table</h3>
-                        <a href="@Url.ActionLink("Index", "Payment")">Tümünü Gör</a>
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Üye</th>
-                                        <th>Tutar</th>
-                                        <th>Ödeme Tarihi</th>
-                                        <th>Durum</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach (var item in Model.MemberPayments.Take(5))
-                                    {
-                                        var today = DateTime.Today;
 
-                                        string badgeClass = "";
-                                        string statusText = "";
+            <div class="col-md-3 grid-margin stretch-card">
+                <div class="card bg-primary text-white">
+                    <div class="card-body text-center">
+                        <i class="mdi mdi-account-group display-4"></i>
 
-                                        if (item.IsPaid)
-                                        {
-                                            badgeClass = "badge badge-success";
-                                            statusText = "Ödendi";
-                                        }
-                                        else if (item.PaymentDate < today)
-                                        {
-                                            badgeClass = "badge badge-danger";
-                                            statusText = "Geçti";
-                                        }
-                                        else
-                                        {
-                                            badgeClass = "badge badge-warning";
-                                            statusText = "Yaklaşıyor";
-                                        }
+                        <h3 class="mt-3">@Model.MemberCount</h3>
 
-                                        <tr>
-                                            <td>@item.MemberName</td>
-                                            <td>@item.Amount TL</td>
-                                            <td>@item.PaymentDate.ToShortDateString()</td>
-                                            <td>
-                                                <label class="@badgeClass">@statusText</label>
-                                            </td>
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
-                        </div>
+                        <h5>Toplam Üye</h5>
                     </div>
                 </div>
             </div>
-             <div class="col-lg-6 grid-margin stretch-card">
-     <div class="card">
-         <div class="card-body">
-             <h4 class="card-title">Spor Dalına Göre Üye</h4>
-             <canvas id="barChart"></canvas>
-         </div>
-     </div>
- </div>
-          
-        </div>
-    </div>
-    <!-- content-wrapper ends -->
-    <!-- partial:../../partials/_footer.html -->
-    <footer class="footer">
-        <div class="card">
-            <div class="card-body">
-                <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                    <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-                    <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from Bootstrapdash.com</span>
+
+            <div class="col-md-3 grid-margin stretch-card">
+                <div class="card bg-success text-white">
+                    <div class="card-body text-center">
+                        <i class="mdi mdi-whistle display-4"></i>
+
+                        <h3 class="mt-3">@Model.CoachCount</h3>
+
+                        <h5>Toplam Koç</h5>
+                    </div>
                 </div>
             </div>
+
+            <div class="col-md-3 grid-margin stretch-card">
+                <div class="card bg-info text-white">
+                    <div class="card-body text-center">
+                        <i class="mdi mdi-basketball display-4"></i>
+
+                        <h3 class="mt-3">@Model.SportCount</h3>
+
+                        <h5>Spor Dalı</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 grid-margin stretch-card">
+                <div class="card bg-warning text-white">
+                    <div class="card-body text-center">
+                        <i class="mdi mdi-cash-multiple display-4"></i>
+
+                        <h3 class="mt-3">@Model.TotalPaymentAmount ₺</h3>
+
+                        <h5>Toplam Gelir</h5>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </footer>
-    <!-- partial -->
+
+        <!-- TABLO + GRAFİK -->
+
+        <div class="row">
+
+            <div class="col-lg-6 grid-margin stretch-card">
+
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between mb-3">
+
+                            <h4 class="card-title mb-0">
+                                Son Ödemeler
+                            </h4>
+
+                            <a href="/Payment"
+                               class="btn btn-primary btn-sm">
+                                Tümünü Gör
+                            </a>
+
+                        </div>
+
+                        <div class="table-responsive">
+
+                            <table class="table table-hover">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>Üye</th>
+
+                                        <th>Tutar</th>
+
+                                        <th>Tarih</th>
+
+                                        <th>Durum</th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    @foreach (var item in Model.MemberPayments)
+                                    {
+                                        var today = DateTime.Today;
+
+                                        string badge = "";
+
+                                        string status = "";
+
+                                        if (item.IsPaid)
+                                        {
+                                            badge = "badge badge-success";
+                                            status = "Ödendi";
+                                        }
+                                        else if (item.PaymentDate < today)
+                                        {
+                                            badge = "badge badge-danger";
+                                            status = "Gecikti";
+                                        }
+                                        else
+                                        {
+                                            badge = "badge badge-warning";
+                                            status = "Yaklaşıyor";
+                                        }
+
+                                        <tr>
+
+                                            <td>@item.MemberName</td>
+
+                                            <td>@item.Amount ₺</td>
+
+                                            <td>@item.PaymentDate.ToShortDateString()</td>
+
+                                            <td>
+
+                                                <label class="@badge">
+
+                                                    @status
+
+                                                </label>
+
+                                            </td>
+
+                                        </tr>
+                                    }
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 grid-margin stretch-card">
+
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+
+                            Spor Dalına Göre Üye Sayısı
+
+                        </h4>
+
+                        <canvas id="barChart"></canvas>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- KOÇ RAPORU -->
+
+        <div class="row">
+
+            <div class="col-lg-12 grid-margin stretch-card">
+
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+
+                            Koç Raporu
+
+                        </h4>
+
+                        <div class="table-responsive">
+
+                            <table class="table table-striped">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>Koç</th>
+
+                                        <th>Spor Dalı</th>
+
+                                        <th>Maaş</th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    @foreach (var item in Model.CoachReports)
+                                    {
+
+                                        <tr>
+
+                                            <td>@item.CoachName</td>
+
+                                            <td>@item.SportName</td>
+
+                                            <td>@item.Salary ₺</td>
+
+                                        </tr>
+
+                                    }
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
+
 @section Scripts {
+
     <script>
-        var sportNames = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.SportCounts.Select(x => x.SportName)));
-        var memberCounts = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.SportCounts.Select(x => x.MemberCount)));
 
-        var ctx = document.getElementById("barChart");
+        var sportNames =
+        @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.SportCounts.Select(x => x.SportName)));
 
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: sportNames,
-                datasets: [{
-                    label: "Spor Dalına Göre Üye Sayısı",
-                    data: memberCounts,
-                    backgroundColor: ["#4B49AC", "#FFC100", "#248AFD", "#57B657", "#FF4747"]
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true,
-                            stepSize: 1
-                        }
-                    }]
-                }
-            }
+        var memberCounts =
+        @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.SportCounts.Select(x => x.MemberCount)));
+
+        new Chart(document.getElementById("barChart"),{
+
+        type:'bar',
+
+        data:{
+
+        labels:sportNames,
+
+        datasets:[{
+
+        label:'Üye Sayısı',
+
+        data:memberCounts,
+
+        backgroundColor:[
+        '#4B49AC',
+        '#248AFD',
+        '#57B657',
+        '#FFC100',
+        '#FF4747'
+        ]
+
+        }]
+
+        },
+
+        options:{
+
+        responsive:true,
+
+        scales:{
+
+        yAxes:[{
+
+        ticks:{
+
+        beginAtZero:true,
+
+        stepSize:1
+
+        }
+
+        }]
+
+        }
+
+        }
+
         });
+
     </script>
+
 }

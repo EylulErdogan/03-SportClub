@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanlı\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data.csproj": {}
+    "C:\\Users\\eylul\\Documents\\GitHub\\03-SportClub\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanlı\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data.csproj": {
+    "C:\\Users\\eylul\\Documents\\GitHub\\03-SportClub\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanlı\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data.csproj",
+        "projectUniqueName": "C:\\Users\\eylul\\Documents\\GitHub\\03-SportClub\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data.csproj",
         "projectName": "SporKlubuCodeFirstKatmanlıMimariProjectUI.Data",
-        "projectPath": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanlı\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data.csproj",
+        "projectPath": "C:\\Users\\eylul\\Documents\\GitHub\\03-SportClub\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data.csproj",
         "packagesPath": "C:\\Users\\eylul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanlı\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data\\obj\\",
+        "outputPath": "C:\\Users\\eylul\\Documents\\GitHub\\03-SportClub\\SporKlubuCodeFirstKatmanlıMimariProjectUI.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanlı\\SporKulubu.Model\\SporKulubu.Model.csproj": {
-                "projectPath": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanlı\\SporKulubu.Model\\SporKulubu.Model.csproj"
+              "C:\\Users\\eylul\\Documents\\GitHub\\03-SportClub\\SporKulubu.Model\\SporKulubu.Model.csproj": {
+                "projectPath": "C:\\Users\\eylul\\Documents\\GitHub\\03-SportClub\\SporKulubu.Model\\SporKulubu.Model.csproj"
               }
             }
           }
@@ -371,14 +371,14 @@
         }
       }
     },
-    "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanlı\\SporKulubu.Model\\SporKulubu.Model.csproj": {
+    "C:\\Users\\eylul\\Documents\\GitHub\\03-SportClub\\SporKulubu.Model\\SporKulubu.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanlı\\SporKulubu.Model\\SporKulubu.Model.csproj",
+        "projectUniqueName": "C:\\Users\\eylul\\Documents\\GitHub\\03-SportClub\\SporKulubu.Model\\SporKulubu.Model.csproj",
         "projectName": "SporKulubu.Model",
-        "projectPath": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanlı\\SporKulubu.Model\\SporKulubu.Model.csproj",
+        "projectPath": "C:\\Users\\eylul\\Documents\\GitHub\\03-SportClub\\SporKulubu.Model\\SporKulubu.Model.csproj",
         "packagesPath": "C:\\Users\\eylul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eylul\\Documents\\GitHub\\AllSoftitoProjects\\3CfArchitectureProject\\SporKlubuCodeFirstKatmanlı\\SporKulubu.Model\\obj\\",
+        "outputPath": "C:\\Users\\eylul\\Documents\\GitHub\\03-SportClub\\SporKulubu.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
